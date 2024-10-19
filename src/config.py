@@ -2,7 +2,7 @@ class Config:
     CLIENT_ID = "your_client_id"
     LARGE_IMAGE = "large_image_key"
     SMALL_IMAGE = "small_image_key"
-    STATE = "Playing AlphaCraft"
+    STATE = "Playing Minecraft"
     DETAILS = "Building Minecraft plugin"
     BUTTONS = [
         {"label": "Join Us", "url": "https://your-url.com"},
