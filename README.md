@@ -32,7 +32,7 @@ Discord Rich Presence is a tool for displaying your status in Discord, allowing 
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/IMDelewer/repo.git
+    git clone https://github.com/IMDelewer/discord-presence.git
     cd repo
     ```
 
