@@ -3,7 +3,7 @@
 </div>
 
 
-!# Discord Rich Presence
+:# Discord Rich Presence
 
 ## Description
 
@@ -63,7 +63,8 @@ In the `config.py` file, you can configure the following parameters:
 - Customize your status and image.
 - Works with asynchronous updates.
 
-## Notes
+> Inforamiton
+{.is-info}
 
 - Make sure you have Python 3.7 or above installed.
 - Use `.png` or `.jpg` files for images.
