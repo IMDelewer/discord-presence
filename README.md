@@ -1,81 +1,75 @@
+# Discord Rich Presence
 
-# Discord Rich Presence with Python (Async)
+![Discord Rich Presence](src/images/icon.png)
 
-This project implements Discord Rich Presence using Python's `pypresence` library with asynchronous support through `asyncio`. It allows you to display custom status in Discord, with images and buttons, and manage the configuration through a dedicated [config.py](src/config.py) file.
+## Description
 
-## Features
-- Asynchronous updates using `asyncio`.
-- Custom configuration stored in `config.py`.
-- Supports large and small images.
-- Custom buttons with URLs.
-- Automatic status update every specified interval.
-- Only updates presence when values change (optimized for performance).
+Discord Rich Presence is a tool for displaying your status in Discord, allowing you to integrate various parameters such as current activity, image, and other information.
+
+## Русская версия
+
+Вы можете прочитать README на русском языке [здесь](src/docs/README_RU.md).
+
+---
+
+### Tags
+
+- **Programming Language**: Python
+- **Python Version**: 3.7 and above
+- **Libraries**:
+  - `pypresence`
+  - `asyncio` (for asynchronous execution)
+
+---
 
 ## Installation
 
-1. Clone the repository or download the code.
-2. Install the required dependencies:
-   ```bash
-   pip install pypresence
-   ```
+1. Clone the repository:
 
-3. Configure your Discord Rich Presence by editing `config.py`:
-   ```python
-   class DiscordConfig:
-       CLIENT_ID = "your_client_id"  # Replace with your Discord Application Client ID
-       LARGE_IMAGE = "large_image_key"  # Optional: Large image key from your Discord Developer Portal
-       SMALL_IMAGE = None  # Optional: Small image key or leave it None
-       STATE = "Playing AlphaCraft"
-       DETAILS = "Building Minecraft plugin"
-       BUTTONS = [
-           {"label": "Join Us", "url": "https://your-url.com"},
-           {"label": "Learn More", "url": "https://your-other-url.com"}
-       ]
-       UPDATE_INTERVAL = 15  # Time interval for updating the status (in seconds)
-   ```
+    ```bash
+    git clone https://github.com/username/repo.git
+    cd repo
+    ```
 
-4. Run the project:
-   ```bash
-   python main.py
-   ```
+2. Install the dependencies:
 
-## How to Use
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-- **Configurable Fields:**
-   - `CLIENT_ID`: Your application's Discord Client ID (required).
-   - `LARGE_IMAGE`: The key for the large image you want to display (optional).
-   - `SMALL_IMAGE`: The key for the small image (optional, can be `None`).
-   - `STATE`: A short status line (e.g., "Playing AlphaCraft").
-   - `DETAILS`: A detailed description (e.g., "Building Minecraft plugin").
-   - `BUTTONS`: List of buttons with `label` and `url` (optional).
-   - `UPDATE_INTERVAL`: How frequently to update the presence (in seconds).
+## Usage
 
-- **Images:**
-   - You must upload your images to Discord Developer Portal and use their keys in the `LARGE_IMAGE` and `SMALL_IMAGE` fields.
+1. Configure the `config.py` file according to your requirements.
+2. Run the application:
 
-- **Status Update:**
-   - The status will only update if there are changes, reducing the number of unnecessary updates.
+    ```bash
+    python src/main.py
+    ```
 
-## Example Configuration
+## Configuration
 
-```python
-class DiscordConfig:
-    CLIENT_ID = "123456789012345678"  # Your actual Client ID
-    LARGE_IMAGE = "minecraft_logo"
-    SMALL_IMAGE = None  # No small image
-    STATE = "Playing MineCraft"
-    DETAILS = "Building Minecraft plugin"
-    BUTTONS = [
-        {"label": "Join Us", "url": "https://discord.gg/yourserver"},
-        {"label": "Learn More", "url": "https://yourwebsite.com"}
-    ]
-    UPDATE_INTERVAL = 15  # Update every 15 seconds
-```
+In the `config.py` file, you can configure the following parameters:
+
+- `CLIENT_ID`: Your application ID in Discord.
+- `UPDATE_INTERVAL`: The interval for updating the status (in seconds).
+- Additional parameters that you wish to set.
+
+## Features
+
+- Update your status in Discord.
+- Customize your status and image.
+- Works with asynchronous updates.
+
+## Notes
+
+- Make sure you have Python 3.7 or above installed.
+- Use `.png` or `.jpg` files for images.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. Please refer to the `LICENSE` file for more information.
 
 ## Contribution
 
-Feel free to submit pull requests, suggest improvements, or report issues.
+If you would like to contribute to this project, please fork the repository, make your changes, and create a pull request.
+
