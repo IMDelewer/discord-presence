@@ -1,6 +1,6 @@
 # Discord Rich Presence
 
-![Discord Rich Presence](src/images/icon.png)
+<img src="srcimages/icon.png" alt="Discord Rich Presence" width="600" height="600" />
 
 ## Description
 
