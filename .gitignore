@@ -1,6 +1,12 @@
 # Python Cache
+
 *__pycache__
+*.pyc
 
 # Python Venv
 
 *venv
+
+# Output files
+
+*output
