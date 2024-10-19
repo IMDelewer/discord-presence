@@ -2,8 +2,10 @@
     <img src="src/images/icon.png" alt="Discord Rich Presence" width="200" height="200" />
 </div>
 
+<div align="center">
+    <h1>Discord Rich Presence</h1>
+</div>
 
-# Discord Rich Presence
 
 ## Описание
 
