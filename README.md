@@ -1,8 +1,9 @@
-# Discord Rich Presence
-
 <div align="center">
-    <img src="src/images/icon.png" alt="Discord Rich Presence" width="400" height="400" />
+    <img src="src/images/icon.png" alt="Discord Rich Presence" width="200" height="200" />
 </div>
+
+
+# Discord Rich Presence
 
 ## Description
 
