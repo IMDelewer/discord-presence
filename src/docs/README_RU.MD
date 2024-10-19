@@ -28,7 +28,7 @@ Discord Rich Presence — это инструмент для отображен�
 1. Склонируйте репозиторий:
 
     ```bash
-    git clone https://github.com/username/repo.git
+    git clone https://github.com/IMDelewer/repo.git
     cd repo
     ```
 
